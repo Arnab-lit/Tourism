@@ -1,73 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-.cat{
-    justify-content: left;
-    align-items: left;
-    text-align: left;
-}
-.me{
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    min-height: 100vh;
-}
-.navigation{
-    position: fixed;
-    width: 60px;
-    height: 100%;
-    background: rgb(9, 97, 93);
-    transition: 0.5s;
-    overflow: hidden;
-}
-.navigation:hover{
-    width: 300px;
-}
-.navigation ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.navigation ul li{
-    position: relative;
-    width: 100%;
-    list-style: none;
-}
-.navigation ul li:hover{
-    background: #1dc1ea;
-}
-.navigation ul li a{
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    text-decoration: none;
-    color: #fff;
-}
-.navigation ul li a .icon{
-    position: relative;
-    display: block;
-    min-width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-}
-.navigation ul li a .icon .fa{
-    font-size: 24px;
-}
-.navigation ul li a .title{
-    position: relative;
-    display: block;
-    padding: 0 10px;
-    height: 60px;
-    line-height: 60px;
-    text-align: start;
-    white-space: nowrap;
-}
+
 .hood h2{
     font-size: 7em;
     font-weight: 1000;
@@ -82,7 +13,7 @@
     margin-right: 10px;
 }
 .hood h2:hover span:nth-child(1):after{
-    content: " TourisM";
+    content: " Tourism";
 }
 .hood h2:hover span:nth-child(2){
     margin-left: 40px;
