@@ -12,6 +12,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
+    margin: 80px;
 }
 .container .card{
     position: relative;
@@ -26,7 +27,7 @@
     transition: 0.3s ease-in-out;
 }
 .container .card:hover{
-    height: 350px;
+    height: 360px;
 }
 .container .card .zoom{
     position: relative;

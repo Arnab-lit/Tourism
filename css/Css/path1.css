@@ -39,6 +39,7 @@
     border-radius: 4px;
     box-shadow: 0 5px 15px rgba(0,0,0,.5);
     display: flex;
+    margin-top: 180px;
 }
 .box:hover{
     box-shadow: 0 15px 30px rgba(0,0,0,.5);
@@ -52,6 +53,7 @@
 }
 .box .food{
     padding-left: 20px;
+    margin: 50px;
 }
 .box .food h2{
     margin: 0;
