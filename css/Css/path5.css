@@ -1,0 +1,61 @@
+.dog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #022d49;
+    min-height: 100vh;
+}
+.container{
+    position: relative
+    width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: 80px;
+}
+.container .card{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    margin: 15px;
+    overflow: hidden;
+}
+.container .card .photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .card .photo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .content div{
+    padding: 40px;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.2s;
+}
+.container .card:hover .content div{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
