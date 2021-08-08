@@ -8,6 +8,7 @@
     justify-content: left;
     align-items: left;
     text-align: left;
+    
 }
 .me{
     display: flex;
@@ -22,9 +23,10 @@
     background: rgb(9, 97, 93);
     transition: 0.5s;
     overflow: hidden;
+    z-index: 1;
 }
 .navigation:hover{
-    width: 300px;
+    width: 250px;
 }
 .navigation ul {
     position: absolute;

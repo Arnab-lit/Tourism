@@ -6,7 +6,7 @@
 }
 .container{
     position: relative;
-    width: 1500px;
+    width: 1800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@
     height: 200px;
     top: -50px;
     left: 20px;
-    z-index: 1;
+    overflow: hidden;
     box-shadow: 0 255px 255px rgba(0,0,0,0.2);
 }
 .container .card .zoom img{

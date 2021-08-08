@@ -3,21 +3,25 @@
     justify-content: center;
     align-items: center;
     background: #022d49;
-    min-height: 100vh;
+    
 }
 .container{
-    position: relative
-    width: 1100px;
+    position: relative;
+    width: 1800px;
     display: flex;
     flex-wrap: wrap;
-    transform-style: preserve-3d;
-    perspective: 500px;
-    margin: 80px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 70px;
 }
 .container .card{
     position: relative;
-    width: 275px;
-    height: 275px;
+    width: 280px;
+    height: 280px;
+    background: #000;
+    transition: 0.5s;
     margin: 15px;
     overflow: hidden;
 }
@@ -27,6 +31,22 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+.container .card .photo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,aqua,navy);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+    mix-blend-mode: multiply;
+}
+.container .card:hover .photo::before{
+    opacity: 1;
 }
 .container .card .photo img{
     position: absolute;
@@ -42,9 +62,11 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    align-items: flex-end;
+    box-sizing: border-box;
 }
 .container .card .content div{
     padding: 40px;
@@ -58,4 +80,27 @@
     visibility: visible;
     opacity: 1;
     transform: translateY(0px);
+}
+.container .card .content h2{
+    color: white;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    transform: translateY(200px);
+}
+.container .card:hover .content h2{
+    transform: translateY(0px);
+    transition-delay: 0.3s;
+}
+.container .card .content p{
+    color: white;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    font-size: 14px;
+    transform: translateY(200px);
+}
+.container .card:hover .content p{
+    transform: translateY(0px);
+    transition-delay: 0.4s;
 }
